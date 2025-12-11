@@ -18,7 +18,8 @@ Microsoft Windows [Version 10.0.17763.2300]
 (c) 2018 Microsoft Corporation. All rights reserved.
 
 C:\Windows\system32>whoami /priv
-whoami /priv```
+whoami /priv
+
 
 PRIVILEGES INFORMATION
 ----------------------
@@ -32,7 +33,7 @@ SeChangeNotifyPrivilege       Bypass traverse checking                  Enabled
 SeImpersonatePrivilege        Impersonate a client after authentication Enabled
 SeCreateGlobalPrivilege       Create global objects                     Enabled
 SeIncreaseWorkingSetPrivilege Increase a process working set            Enabled
-
+```
 What it provides
 
 A restored token with all admin privileges enabled
