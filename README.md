@@ -7,7 +7,7 @@ On Windows, even if a user belongs to the Administrators group, the resulting lo
 
 FullPowers leverages token duplication techniques to create a new process with a full administrative token, restoring high-privilege rights typically stripped by UAC.
 
-**Usage:
+```Usage:
 C:\wamp\www>FullPowers.exe
 FullPowers.exe
 [+] Started dummy thread with id 3848
@@ -18,7 +18,7 @@ Microsoft Windows [Version 10.0.17763.2300]
 (c) 2018 Microsoft Corporation. All rights reserved.
 
 C:\Windows\system32>whoami /priv
-whoami /priv**
+whoami /priv```
 
 PRIVILEGES INFORMATION
 ----------------------
